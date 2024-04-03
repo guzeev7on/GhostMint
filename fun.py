@@ -250,15 +250,8 @@ address = {
         'rpc': '',
         'lzChainId': 173,
         'ghost_contract': '',
-
     },
-    'nova': {
-        'type': 0,        
-        'rpc': '',
-        'lzChainId': 175,
-        'ghost_contract': '',
 
-    },
     'meter': {
         'type': 0,        
         'rpc': '',
@@ -370,7 +363,6 @@ address = {
         'ghost_contract': '0x03e9044D7E8da61815EbeD0a5B265Fbc9CBDfA4f',
 
     },
-
     'blast': {
         'type': 0,        
         'rpc': 'https://blast.blockpi.network/v1/rpc/public',
@@ -379,7 +371,25 @@ address = {
         'native': 'ETH',        
         'lzChainId': 243,
         'ghost_contract': '0xc0F14A9a8d3Bc913E660c473c1932FFBDda71b45',
+    },
+    'nova': {
+        'type': 0,        
+        'rpc': 'https://arbitrum-nova.drpc.org',
+        "scan": "https://nova.arbiscan.io/tx",
+        'ETH': 'native',
+        'native': 'ETH',        
+        'lzChainId': 42170,
+        'ghost_contract': '0x03e9044d7e8da61815ebed0a5b265fbc9cbdfa4f',
+    },
 
+    'mode': {
+        'type': 0,        
+        'rpc': 'https://1rpc.io/mode',
+        "scan": "https://modescan.io/",
+        'ETH': 'native',
+        'native': 'ETH',        
+        'lzChainId': 34443,
+        'ghost_contract': '0x03e9044D7E8da61815EbeD0a5B265Fbc9CBDfA4f',
     },
 
 
