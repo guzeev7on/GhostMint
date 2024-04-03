@@ -9,24 +9,50 @@ proxy_changeIPlink = "none"
 
 
 #то что ниже желательно настроить под себя
-max_komissia = 2 # указывается в $ (пример 1.2 или 0.15) в нее входит плата за подписание транзакции (но не во всех сетях это учитывается верно) Для минта, сюда так же входит цена картинки.
-min_balance = 1.5 # указывается в $. Кошелек с таким балансом и ниже, будет пропускать, считаться пустым.
+max_komissia = 1 # указывается в $ (пример 1.2 или 0.15) в нее входит плата за подписание транзакции (но не во всех сетях это учитывается верно) Для минта, сюда так же входит цена картинки.
+min_balance = 0.05 # указывается в $. Кошелек с таким балансом и ниже, будет пропускать, считаться пустым.
 veroyatnost = 100 # вероятность что кошелек отработает указывается в %
-skolko_trans = [1,5] # указывайте диапазон сколько делать транзакций на каждом кошельке. Если это модуль минт, то будет делать столько минтов сколько вы укажете
-predel_trans = 100 # количество транзакций в Л0. кошельки пропускаются если уже достигли этого значения по транзакциям
+skolko_trans = [3,8] # указывайте диапазон сколько делать транзакций на каждом кошельке. Если это модуль минт, то будет делать столько минтов сколько вы укажете
+predel_trans = 150 # количество транзакций в Л0. кошельки пропускаются если уже достигли этого значения по транзакциям
 
 #networks_from: 
-# networks_from = ["arbitrum" , "polygon", "bsc", "zora", "scroll", "base", "linea", "mantle", "optimism", "blast"]
-networks_from = ["arbitrum" , "polygon", "bsc", "zora", "scroll", "base", "linea", "mantle", "optimism", "blast"]
+# networks_from = ["arbitrum" , "polygon", "bsc", "zora", "scroll", "base", "linea", "mantle", "optimism", "blast", "nova", "mode"]
+networks_from = [
+               "arbitrum" , 
+               "polygon", 
+               "bsc", 
+               "zora", 
+               "scroll", 
+               "base", 
+               "linea", 
+               "mantle", 
+               "optimism", 
+               "blast",
+               "nova",
+               "mode"
+               ]
 
-# networks_to = ["arbitrum" , "polygon", "bsc", "zora", "scroll", "base", "linea", "mantle", "optimism", "blast"]
-networks_to = ["arbitrum" , "polygon", "bsc", "zora", "scroll", "base", "linea", "mantle", "optimism", "blast"]
+# networks_to = ["arbitrum" , "polygon", "bsc", "zora", "scroll", "base", "linea", "mantle", "optimism", "blast", "nova", "mode"]
+networks_to = [
+               "arbitrum" , 
+               "polygon", 
+               "bsc", 
+               "zora", 
+               "scroll", 
+               "base", 
+               "linea", 
+               "mantle", 
+               "optimism", 
+               "blast",
+               "nova",
+               "mode"
+               ]
 
 
 #укажите паузу в работе между кошельками, минимальную и максимальную. 
 #При смене каждого кошелька будет выбрано случайное число. Значения указываются в секундах
-timeoutMin = 10 #минимальная 
-timeoutMax = 30 #максимальная
+timeoutMin = 5 #минимальная 
+timeoutMax = 10 #максимальная
 #задержки между операциями в рамках одного кошелька
 timeoutTehMin = 3 #минимальная 
 timeoutTehMax = 10 #максимальная
@@ -60,6 +86,3 @@ prices = {
     "MNT": 22,
     "last_update": 0
 }
-
-
-
